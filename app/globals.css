@@ -1986,4 +1986,31 @@ body {
   .hero::before {
     transform: none;
   }
+
+  .hero::before,
+  .hero::after {
+    animation: none;
+    opacity: 0.28;
+  }
+
+  .hero,
+  .hero-preview,
+  .project-entry,
+  .author-card,
+  .author-panels section,
+  .contact,
+  .detail-hero,
+  .detail-section,
+  .side-nav,
+  .detail-nav {
+    backdrop-filter: none;
+  }
+
+  .hero-preview {
+    display: none;
+  }
+
+  .project-entry:hover {
+    transform: none;
+  }
 }
