@@ -95,14 +95,15 @@ export default function FuWuWaiBaoPage() {
               <p>国赛成果体现项目在完整性、创新性和应用价值上的进一步认可。</p>
             </div>
           </div>
-          <div className="certificate-link-panel">
-            <span>证书材料</span>
-            <strong>区域赛二等奖证书 PDF</strong>
-            <p>为提升移动端加载速度，证书以外部打开方式展示，不在页面中直接加载完整 PDF。</p>
-            <a className="secondary" href="/project-assets/fuwuwaibao-regional-certificate.pdf" target="_blank" rel="noreferrer">
-              打开证书
-            </a>
-          </div>
+          <figure className="certificate-image">
+            <img
+              src="/project-assets/fuwuwaibao-regional-certificate.png"
+              alt="第十七届中国大学生服务外包创新创业大赛东部区域赛二等奖证书"
+              loading="lazy"
+              decoding="async"
+            />
+            <figcaption>第十七届中国大学生服务外包创新创业大赛东部区域赛二等奖证书</figcaption>
+          </figure>
         </section>
 
         <section className="detail-section" id="demo">

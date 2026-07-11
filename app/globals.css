@@ -975,6 +975,29 @@ h1 {
   margin-bottom: 4px;
 }
 
+.certificate-image {
+  background: rgba(255, 255, 255, 0.035);
+  border: 1px solid rgba(168, 219, 190, 0.16);
+  border-radius: 8px;
+  margin: 0;
+  overflow: hidden;
+}
+
+.certificate-image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.certificate-image figcaption {
+  background: rgba(5, 11, 9, 0.72);
+  border-top: 1px solid rgba(168, 219, 190, 0.14);
+  color: #bdd2c8;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 12px 14px;
+}
+
 .module-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
