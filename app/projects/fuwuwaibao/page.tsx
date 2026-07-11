@@ -6,7 +6,7 @@ const chapterNav = [
   ["demo", "演示视频"],
   ["architecture", "系统架构"],
   ["collaboration", "协作开发"],
-  ["next", "待补充材料"],
+  ["value", "项目价值"],
 ];
 
 const techModules = [
@@ -56,7 +56,7 @@ export default function FuWuWaiBaoPage() {
             <p className="eyebrow">Case 02 · Competition Project</p>
             <h2>一个用 GitHub 协作完成的 AI 教学平台比赛项目</h2>
             <p>
-              这个项目是我们参加中国大学生服务外包创新创业大赛的团队作品。它围绕“AI + 教学”展开，
+              这是中国大学生服务外包创新创业大赛团队作品。项目围绕“AI + 教学”展开，
               用 Go 后端、Python AI 引擎和 Vue 前端组合出一套泛雅 AI 智课系统。
             </p>
             <div className="detail-actions">
@@ -77,7 +77,7 @@ export default function FuWuWaiBaoPage() {
             <p className="eyebrow">Award</p>
             <h2>比赛成果</h2>
             <p>
-              目前先展示区域赛二等奖证书。你补充说明国赛三等奖证书还没有发放，所以这里先写成“国赛三等奖证书待补充”，等证书出来后直接替换。
+              项目在赛事评审中取得区域赛二等奖，并获得国赛三等奖成果。区域赛证书作为当前页面的正式成果材料展示。
             </p>
           </div>
           <div className="award-grid">
@@ -92,7 +92,7 @@ export default function FuWuWaiBaoPage() {
             <div className="award-card pending">
               <span>国赛</span>
               <strong>三等奖</strong>
-              <p>证书暂未发放，后续可补充获奖证书、答辩照片或官方公示截图。</p>
+              <p>国赛成果体现项目在完整性、创新性和应用价值上的进一步认可。</p>
             </div>
           </div>
           <iframe
@@ -107,8 +107,7 @@ export default function FuWuWaiBaoPage() {
             <p className="eyebrow">Product Demo</p>
             <h2>系统演示视频</h2>
             <p>
-              这段视频可以作为项目最直观的展示材料：访问者不用先读很多文字，就能看到系统实际运行效果。
-              后续如果你有剪辑版，我们还可以替换成更短、更适合作品集展示的版本。
+              演示视频呈现系统的真实运行过程，帮助访问者在阅读技术结构前先建立直观印象。
             </p>
           </div>
           <DemoVideo />
@@ -143,8 +142,7 @@ export default function FuWuWaiBaoPage() {
             <p className="eyebrow">GitHub Collaboration</p>
             <h2>协作开发痕迹</h2>
             <p>
-              这是这个项目很值得放大的地方：它不是一个人本地写完的练习，而是在 GitHub 上协作推进的比赛项目。
-              后续可以继续补充你的 commit、issue、分工截图和答辩材料。
+              这个项目不是单机练习，而是在 GitHub 上持续协作推进的比赛项目。公开仓库保留了工程结构、提交记录与团队协作痕迹。
             </p>
           </div>
           <div className="fact-grid">
@@ -157,12 +155,12 @@ export default function FuWuWaiBaoPage() {
           </div>
         </section>
 
-        <section className="detail-section value-section" id="next">
-          <p className="eyebrow">Next Materials</p>
-          <h2>下一步建议补充什么</h2>
+        <section className="detail-section value-section" id="value">
+          <p className="eyebrow">Project Value</p>
+          <h2>项目价值</h2>
           <p>
-            这个项目建议继续补充：系统运行截图、你负责的模块、比赛答辩 PPT、团队分工、GitHub 提交记录和国赛三等奖证书。
-            这些材料补齐后，它可以成为作品集里最有竞争力的项目之一。
+            泛雅 AI 智课系统体现了从需求场景、工程实现到比赛展示的完整实践链路。项目同时覆盖前端交互、后端服务、AI 能力接入和团队协作，
+            适合作为作品集中展示综合开发能力与竞赛经历的重点项目。
           </p>
           <a className="primary" href="/#projects">回到项目目录</a>
         </section>

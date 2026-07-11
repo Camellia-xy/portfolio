@@ -37,7 +37,7 @@ const projects = [
     why: "这个项目来自数据库课程设计。它不只是写几张表，而是把企业培训场景拆成业务管理和数据库展示两条线：前台能管理学员、课程、考试与培训任务，后台能展示表、视图、存储过程和触发器如何支撑真实业务。",
     structure: ["前端页面负责产品化展示与操作入口", "后端接口负责业务调用和 Mock 服务演示", "MySQL 负责表、视图、存储过程与触发器规则"],
     functions: ["学员、课程、考试与培训任务管理", "学习运营可视化大屏与统计报表", "数据库表、视图、存储过程和触发器展示"],
-    role: "我重点整理数据库结构、业务模块关系和页面展示逻辑，把原本分散的课程设计内容包装成一个别人能快速看懂的系统型项目。",
+    role: "负责数据库结构梳理、业务模块关系设计与页面展示逻辑整合，将课程设计内容呈现为可演示的系统型项目。",
     result: "项目形成了可运行的前端演示、数据库对象展示、业务管理界面和课程设计材料。它能体现我对数据库设计、业务拆解、前后端协作和项目表达的综合理解。",
     tags: ["Spring Boot", "MyBatis", "React", "MySQL"],
     visuals: [
@@ -51,12 +51,12 @@ const projects = [
     title: "泛雅 AI 智课系统",
     category: "服务外包创新创业大赛",
     period: "2026",
-    oneLine: "我们基于 GitHub 协作开发的 AI 教学平台项目，获得区域赛二等奖，并已进入国赛三等奖成果阶段。",
-    why: "这个项目来自中国大学生服务外包创新创业大赛。它比普通课程作业更适合作为重点展示，因为它有真实团队协作、完整工程结构、比赛成果和可继续补充的产品材料。",
+    oneLine: "基于 GitHub 协作开发的 AI 教学平台项目，获得服务外包大赛区域赛二等奖，并取得国赛三等奖成果。",
+    why: "这个项目来自中国大学生服务外包创新创业大赛。它具备真实团队协作、完整工程结构、比赛成果和产品化表达价值，是作品集中最能体现综合实践能力的项目之一。",
     structure: ["Go 后端服务负责业务接口与数据管理", "Python AI 引擎负责课件解析、讲稿生成和问答能力", "Vue 前端负责学生端、教师端等交互页面"],
     functions: ["PDF/PPTX 课件解析", "AI 讲稿生成与问答", "教学平台多端协作"],
-    role: "我参与团队协作开发和项目材料整理，后续会继续补充我负责的具体模块、提交记录、页面截图和比赛答辩材料。",
-    result: "项目已在 GitHub 上协作开发，公开仓库包含 backend、ai_engine、frontend、docs 等完整目录；目前可展示区域赛二等奖证书，国赛三等奖证书待正式发放后补充。",
+    role: "参与团队协作开发、项目材料梳理与展示内容组织，围绕 AI 教学平台的工程结构和比赛成果进行项目表达。",
+    result: "项目已在 GitHub 上协作开发，公开仓库包含 backend、ai_engine、frontend、docs 等完整目录；赛事成果包括区域赛二等奖与国赛三等奖。",
     tags: ["Vue", "Go", "Python", "AI 教学平台", "GitHub 协作"],
     visuals: [
       { src: "/project-assets/fuwuwaibao-architecture.png", label: "泛雅 AI 智课系统架构图" },
@@ -71,7 +71,7 @@ const projects = [
     why: "这个项目资料最完整：不仅有代码和报告，还有真实结果图。它适合展示我对实验流程、模型评估和结果表达的理解。",
     structure: ["读取 ISOLET 语音特征数据", "训练分类模型", "评估准确率与 Macro F1", "生成对比图和混淆矩阵"],
     functions: ["字母识别预测", "算法效果对比", "混淆矩阵与学习曲线分析"],
-    role: "我整理了项目运行结果、指标含义和可视化图表，用它展示实验项目如何从代码变成可说明的成果。",
+    role: "完成项目运行结果、指标含义和可视化图表整理，展示实验项目从代码实现到结果分析的完整过程。",
     result: "测试样本 1559 条，正确识别 1489 条，准确率约 95.51%，Macro F1 约 95.48%。",
     tags: ["C", "ISOLET", "分类模型", "模型评估"],
     visuals: [
@@ -117,7 +117,7 @@ function EnterpriseInteractiveDemo() {
         <h4>从登录到数据库规则的业务闭环</h4>
         <p>
           这组截图按真实使用路径组织：先进入平台，再管理业务对象，最后展示数据库视图、存储过程和触发器如何支撑运营决策。
-          你可以横向滚动查看每个页面，整体更像在看一个完整产品，而不是图片堆叠。
+          横向导览按真实使用路径展开，使页面呈现为一个完整产品故事，而不是截图堆叠。
         </p>
       </div>
 
@@ -199,7 +199,7 @@ export default function Home() {
               <div className="status-card">
                 <span>当前阶段</span>
                 <strong>从课程实践走向项目表达</strong>
-                <p>把代码、文档、PPT 和截图整理成别人能快速理解的项目故事。</p>
+                <p>将代码、文档、PPT 和截图转化为清晰、可信的项目叙事。</p>
               </div>
               <div className="story-map">
                 <span>背景</span>
@@ -216,8 +216,7 @@ export default function Home() {
             <p className="eyebrow">Project Stories</p>
             <h2>项目故事</h2>
             <p>
-              首页只作为项目目录。点进具体项目后，再按章节展示背景、功能、技术结构、截图演示和项目意义。
-              这样别人先快速浏览你的作品，再选择感兴趣的项目深入阅读。
+              首页作为项目目录，帮助访问者快速了解作品结构。进入具体项目后，可按章节阅读背景、功能、技术结构、演示素材与项目意义。
             </p>
           </div>
 
@@ -249,7 +248,7 @@ export default function Home() {
                     </a>
                   )}
                   {!["learning-platform", "fuwuwaibao"].includes(project.id) && (
-                    <span className="secondary project-link muted-link">后续整理详情</span>
+                    <span className="secondary project-link muted-link">详情建设中</span>
                   )}
                 </div>
               </article>
@@ -271,8 +270,7 @@ export default function Home() {
                 积累从“能写出来”到“能讲清楚、能展示出来”的项目能力。
               </p>
               <p>
-                我希望这个作品集能记录我的成长路线：哪些项目是课程推动我完成的，哪些技术是我主动去试的，
-                哪些结果值得留下来继续优化。这里会持续补充我的项目、比赛经历、GitHub 协作记录和更完整的个人介绍。
+                这个作品集记录了我在课程设计、实验项目和比赛实践中的阶段性成果，也呈现了我对技术实现、项目表达和团队协作的持续积累。
               </p>
               <div className="profile-links">
                 <a href="https://github.com/Camellia-xy" target="_blank" rel="noreferrer">
@@ -298,7 +296,7 @@ export default function Home() {
                 <li>把项目背景和解决问题讲清楚</li>
                 <li>突出自己负责的模块和实际贡献</li>
                 <li>用截图、文档和成果图增强可信度</li>
-                <li>把课程项目、比赛经历和个人项目整理成统一作品集</li>
+                <li>将课程项目、比赛经历和个人项目统一呈现为作品集</li>
               </ul>
             </section>
           </div>
@@ -309,7 +307,7 @@ export default function Home() {
             <p className="eyebrow">Contact</p>
             <h2>欢迎了解我的项目经历</h2>
             <p>
-              如果你想进一步了解我的项目经历、比赛作品或协作开发记录，可以通过下面的方式联系我。
+              欢迎了解我的项目经历、比赛作品与协作开发记录。
             </p>
             <div className="contact-methods">
               <a href="https://github.com/Camellia-xy" target="_blank" rel="noreferrer">
