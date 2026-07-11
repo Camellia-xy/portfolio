@@ -103,7 +103,7 @@ const skills = ["Python", "C++", "Java / Spring Boot", "React", "MySQL", "机器
 function ProjectImage({ src, label }: { src: string; label: string }) {
   return (
     <figure className="project-image">
-      <img src={src} alt={label} />
+      <img src={src} alt={label} loading="lazy" decoding="async" />
       <figcaption>{label}</figcaption>
     </figure>
   );

@@ -67,7 +67,7 @@ export default function FuWuWaiBaoPage() {
             </div>
           </div>
           <figure className="hero-shot">
-            <img src="/project-assets/fuwuwaibao-architecture.png" alt="泛雅 AI 智课系统架构图" />
+            <img src="/project-assets/fuwuwaibao-architecture.png" alt="泛雅 AI 智课系统架构图" loading="lazy" decoding="async" />
             <figcaption>项目架构图：展示前端、后端、AI 引擎与基础服务之间的关系。</figcaption>
           </figure>
         </section>
@@ -95,11 +95,14 @@ export default function FuWuWaiBaoPage() {
               <p>国赛成果体现项目在完整性、创新性和应用价值上的进一步认可。</p>
             </div>
           </div>
-          <iframe
-            className="certificate-frame"
-            src="/project-assets/fuwuwaibao-regional-certificate.pdf"
-            title="服务外包区域赛二等奖证书"
-          />
+          <div className="certificate-link-panel">
+            <span>证书材料</span>
+            <strong>区域赛二等奖证书 PDF</strong>
+            <p>为提升移动端加载速度，证书以外部打开方式展示，不在页面中直接加载完整 PDF。</p>
+            <a className="secondary" href="/project-assets/fuwuwaibao-regional-certificate.pdf" target="_blank" rel="noreferrer">
+              打开证书
+            </a>
+          </div>
         </section>
 
         <section className="detail-section" id="demo">

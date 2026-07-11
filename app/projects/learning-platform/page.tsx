@@ -40,7 +40,7 @@ const featureChapters = [
 function ProjectShot({ src, label, note }: { src: string; label: string; note: string }) {
   return (
     <figure className="screen-card">
-      <img src={src} alt={label} />
+      <img src={src} alt={label} loading="lazy" decoding="async" />
       <figcaption>
         <strong>{label}</strong>
         <span>{note}</span>
@@ -80,7 +80,7 @@ export default function LearningPlatformPage() {
             </div>
           </div>
           <figure className="hero-shot">
-            <img src="/project-assets/enterprise-data-overview.png" alt="企业在线学习平台数据全景" />
+            <img src="/project-assets/enterprise-data-overview.png" alt="企业在线学习平台数据全景" loading="lazy" decoding="async" />
             <figcaption>数据全景总览：把 46 个数据库对象可视化呈现出来。</figcaption>
           </figure>
         </section>
